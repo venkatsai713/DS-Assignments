@@ -13,8 +13,6 @@ public class CircularDoublyLinkedList {
 
     private Node head;
     private Node tail;
-    private int size;
-
     // Add a node to the beginning of the list
     public void addFirst(int item) {
         Node newNode = new Node(item);
@@ -32,7 +30,6 @@ public class CircularDoublyLinkedList {
             tail.next = newNode;
             head = newNode;
         }
-        size++;
     }
 
     // Add a node to the end of the list
@@ -52,7 +49,6 @@ public class CircularDoublyLinkedList {
             head.previous = newNode;
             tail = newNode;
         }
-        size++;
     }
 
     // Display list in forward direction
